@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Мастерская по ремонту обуви в Запорожье</title>
-	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/css/main.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
