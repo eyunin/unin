@@ -71,7 +71,7 @@ table {
 	margin-top: 100px;
 	overflow-x: hidden;
 }
-.header, .footer, .contacts {
+.header, .footer, .contacts, .about {
 	background: #262d39;
 	text-align: center;
 }
@@ -246,7 +246,7 @@ h1 {
 .slick-dots .slick-active button::before {
 	color: #fff;
 }
-.contacts {
+.contacts, .about {
 	color: #fff;
 	padding: 20px 0;
 }

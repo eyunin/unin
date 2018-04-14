@@ -16,15 +16,18 @@
 	height: 100px;
 	-webkit-perspective: 780px;
 	perspective: 780px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.cssload-loader::before {
+/*.cssload-loader::before {
 	content: "unin";
 	color: #fff;
 	position: absolute;
 	top: calc(50% - 21px);
 	left: 25%;
 	font-size: 21px;
-}
+}*/
 
 .cssload-inner {
 	position: absolute;
@@ -74,7 +77,6 @@
 	-moz-animation: cssload-rotate-three 1.15s linear infinite;
 	border-top: 3px solid #c9e98a;
 }
-
 @keyframes cssload-rotate-one {
 	0% {
 		-webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
@@ -134,9 +136,11 @@
 		-webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
 	}
 }
+
 </style>
 <div id="preloader" class="preloader">
 	<div class='cssload-loader'>
+		<img class="preload-img" src="/assets/img/tools-logo.svg" alt="Logo" width="60">
 		<div class='cssload-inner cssload-one'></div>
 		<div class='cssload-inner cssload-two'></div>
 		<div class='cssload-inner cssload-three'></div>

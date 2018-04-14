@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="ru-RU">
+	<meta name="description" content="Мастерская по ремонту и реставрации вашей любимой обуви в Запорожье, высокое качество обслужывания, профессионализм и самые низкие цены">
+	<meta name="keywords" content="ремонт обуви, обувная мастерская, сапожник, обувь">
+	<meta name="robots" content="all">
 	<title>Мастерская по ремонту обуви в Запорожье</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/safari-pinned-tab.svg" color="#262d39">
+	<link rel="shortcut icon" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#262d39">
+	<meta name="msapplication-config" content="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#262d39">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/css/main.css">
 	<link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'];?>/assets/css/slick.css">
@@ -44,6 +57,9 @@
 			</div>
 		</div>
 		<div class="content">
+			<div id="about" class="about">
+				<h1>О Нас</h1>
+			</div>
 			<div id="price" class="price">
 				<h1>Наши услуги</h1>
 				<div class="table-wrap">
