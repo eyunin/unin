@@ -122,6 +122,9 @@ h1 {
 .nav a.a-logo {
 	border-bottom: 0;
 }
+.header.small {
+	background: rgba(38, 45, 57, .95);
+}
 .header.small .nav li {
 	font-size: 14px;
 }
