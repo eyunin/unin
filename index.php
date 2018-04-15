@@ -35,12 +35,12 @@
 	<header id="header" class="header">
 		<a class="sml-logo" href="/"><img class="logo" src="/assets/img/logo-white.svg" alt="Обувная мастерская - Юнин А."></a>
 		<nav>
-			<ul class="nav">
+			<ul class="nav" id="nav">
 				<li><a href="/">Главная</a></li>
-				<li><a href="#about">О Нас</a></li>
+				<li><a class="link" href="#about">О Нас</a></li>
 				<li class="logo-item"><a class="a-logo" href="/"><img class="logo" src="/assets/img/logo-white.svg" alt="Обувная мастерская - Юнин А."></a></li>
-				<li><a href="#price">Услуги</a></li>
-				<li><a href="#contact">Контакты</a></li>
+				<li><a class="link" href="#price">Услуги</a></li>
+				<li><a class="link" href="#contact">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -101,22 +101,22 @@
 								<td>50</td>
 							</tr>
 							<tr>
-								<td>Профилактика мужская фирм.</td>
+								<td>Профилактика мужская фирменная</td>
 								<td>пара</td>
-								<td>95</td>
+								<td>100</td>
 							</tr>
 							<tr>
-								<td>Профилактика мужская рант.</td>
+								<td>Профилактика мужская рантовая</td>
 								<td>пара</td>
 								<td>80</td>
 							</tr>
 							<tr>
-								<td>Профилактика женская фирм.</td>
+								<td>Профилактика женская фирменная</td>
 								<td>пара</td>
-								<td>95</td>
+								<td>100</td>
 							</tr>
 							<tr>
-								<td>Профилактика женская рант.</td>
+								<td>Профилактика женская рантовая</td>
 								<td>пара</td>
 								<td>80</td>
 							</tr>
@@ -127,22 +127,22 @@
 							</tr>
 							<tr>
 								<td>Подклейка подошвы</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>80</td>
 							</tr>
 							<tr>
 								<td>Установка латки с заправкой под подошву</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>40</td>
 							</tr>
 							<tr>
 								<td>Установка латки поверх обуви</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>40</td>
 							</tr>
 							<tr>
 								<td>Укрепление каблуков</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>40</td>
 							</tr>
 							<tr>
@@ -152,17 +152,17 @@
 							</tr>
 							<tr>
 								<td>Замена молнии (без стоимости молнии)</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>80</td>
 							</tr>
 							<tr>
 								<td>Замена собачки</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>30</td>
 							</tr>
 							<tr>
 								<td>Замена супинатора</td>
-								<td>шт.</td>
+								<td>1 шт.</td>
 								<td>80</td>
 							</tr>
 							<tr>
@@ -229,7 +229,7 @@
 					</div>
 					<div class="ci-bl location">
 						<p><img src="/assets/img/contacts/location.svg" alt="Address">Адрес:</p>
-						<p>ул.Независимой Украины 90А, Запорожье, Украина</p>
+						<p>ул. Независимой Украины 90А, Запорожье, Украина</p>
 					</div>
 					<div class="ci-bl mail">
 						<p><img src="/assets/img/contacts/mail.svg" alt="Email">Email:</p>
@@ -249,33 +249,35 @@
 		<footer class="footer">
 			<?php echo date("Y"); ?> | <a href="/">Обувная мастерская "Юнин"</a>
 		</footer>
-		<script>
-		function initMap() {
-			var uluru = {lat: 47.837910, lng: 35.144295};
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 17,
-				center: uluru
-			});
-			var image = '/assets/img/map_logo.png';
-			var marker = new google.maps.Marker({
-				position: uluru,
-				map: map,
-				icon: image
-			});
-			var goTo = 'https://goo.gl/maps/Z3jsv3ytpUR2';
-			var infoContent = 'Обувная мастерская "Юнин"';
-			var iWindow = new google.maps.InfoWindow({content: infoContent});
-			iWindow.open(map, marker);
-			marker.addListener('mouseover', function() {iWindow.open(map, marker);});
-			marker.addListener('click', function() {location = goTo});
-		}
-		</script>
 	</div>
 </div>
+<script>
+// map
+function initMap() {
+	var uluru = {lat: 47.837910, lng: 35.144295};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: uluru
+	});
+	var image = '/assets/img/map_logo.png';
+	var marker = new google.maps.Marker({
+		position: uluru,
+		map: map,
+		icon: image
+	});
+	var goTo = 'https://goo.gl/maps/Z3jsv3ytpUR2';
+	var infoContent = 'Обувная мастерская "Юнин"';
+	var iWindow = new google.maps.InfoWindow({content: infoContent});
+	iWindow.open(map, marker);
+	marker.addListener('mouseover', function() {iWindow.open(map, marker);});
+	marker.addListener('click', function() {location = goTo});
+}
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgq5Pdi-skyqnnG-RNW4RuwM0sdep7hB4&callback=initMap" async defer></script>
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/slick.min.js"></script>
 <script>
+	// slider
 	$(document).ready(function(){
 		$('.main-slider').slick({
 			slidesToShow: 1,
@@ -290,6 +292,7 @@
 		});
 	});
 
+	// small header on scroll
 	$(document).on("scroll", function() {
 		if($(document).scrollTop()>100) {
 			$("#header").addClass("small");
@@ -297,6 +300,17 @@
 			$("#header").removeClass("small");
 		}
 	});
+
+	// close mobile menu and animated scroll when click anchor
+	$(document).ready(function(){
+		$('#nav').on("click", ".link", function() {
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top - 70;
+			$("body,html").animate({scrollTop: top}, 700);
+			$("#hmt").prop( "checked", false );
+		});
+	});
+
 </script>
 </body>
 </html>

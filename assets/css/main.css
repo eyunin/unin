@@ -171,8 +171,7 @@ h1 {
 	background: #EBF0F6;
 }
 .table tbody tr:nth-child(even) {
-	background: #4c78ad;
-	color: #fff;
+	background: #d0e1f5;
 }
 .table tbody tr {
 	font-size: 16px;
@@ -489,6 +488,10 @@ h1 {
 		left: 0;
 	}
 	.hidden-menu-ticker:checked ~ .wrap .container-fluid {
+		left: 200px;
+	}
+	.hidden-menu-ticker:checked ~ .wrap .header .sml-logo {
+		position: relative;
 		left: 200px;
 	}
 	.alpha-block {
