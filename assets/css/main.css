@@ -142,6 +142,12 @@ h1 {
 	margin: 0 auto;
 	max-width: 100%;
 }
+.about p {
+	max-width: 850px;
+	margin: auto;
+	font-size: 16px;
+	text-align: justify;
+}
 .price {
 	padding: 20px 0;
 	background: #f1f1f1;
@@ -183,6 +189,20 @@ h1 {
 .table td:last-child,
 .table th:last-child {
 	text-align: right;
+}
+/*attention block*/
+.attention {
+	display: flex;
+	align-items: center;
+	max-width: 850px;
+	margin: 20px auto 10px;
+	padding: 10px;
+	border: 1px solid #262d39;
+	font-size: 14px;
+	color: #262d39;
+}
+.attention img {
+	margin-right: 10px;
 }
 /*slider*/
 .main-slider {
@@ -310,6 +330,14 @@ h1 {
 /*mob menu*/
 .hidden-menu-ticker, .sml-logo {
 	display: none;
+}
+@media only screen and (max-width: 850px) {
+	.about p {
+		padding: 0 15px;
+	}
+	.attention {
+		margin: 20px 15px 10px;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.table, .table tbody, .table td, .table tr {
