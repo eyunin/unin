@@ -224,16 +224,18 @@
 					</div>
 					<div class="ci-bl bt tel">
 						<p><img src="/assets/img/contacts/tel.svg" alt="Phone">Телефоны:</p>
-						<p><a href="tel:+380999365911">+380 99 936 5913</a></p>
-						<p><a href="tel:+380972758406">+380 97 275 8406</a></p>
+						<p><nobr><a href="tel:+380999365911">+380 99 936 59 13</a></nobr></p>
+						<p><nobr><a href="tel:+380972758406">+380 97 275 84 06</a></nobr></p>
 					</div>
 					<div class="ci-bl location">
 						<p><img src="/assets/img/contacts/location.svg" alt="Address">Адрес:</p>
 						<p>ул. Независимой Украины 90А, Запорожье, Украина</p>
 					</div>
 					<div class="ci-bl mail">
+					<!--
 						<p><img src="/assets/img/contacts/mail.svg" alt="Email">Email:</p>
-						<p><a href="mailto:unin@unin.zp.ua">unin@unin.zp.ua</a></p>
+						<p><a href="mailto:master@master.zp.ua">master@master.zp.ua</a></p>
+					-->
 					</div>
 					<div class="ci-bl w-100 social">
 						<a href="viber://add?number=380999365913" title="Viber"><img src="/assets/img/viber-logo.png" height="60" width="auto" alt="Viber"></a>
@@ -247,7 +249,7 @@
 			<div id="map"></div>
 		</div>
 		<footer class="footer">
-			<?php echo date("Y"); ?> | <a href="/">Обувная мастерская "Юнин"</a>
+			<?php echo date("Y"); ?> | <a href="/">Обувная мастерская Александра Юнина</a>
 		</footer>
 	</div>
 </div>
@@ -266,7 +268,7 @@ function initMap() {
 		icon: image
 	});
 	var goTo = 'https://goo.gl/maps/Z3jsv3ytpUR2';
-	var infoContent = 'Обувная мастерская "Юнин"';
+	var infoContent = 'Обувная мастерская Александра Юнина';
 	var iWindow = new google.maps.InfoWindow({content: infoContent});
 	iWindow.open(map, marker);
 	marker.addListener('mouseover', function() {iWindow.open(map, marker);});

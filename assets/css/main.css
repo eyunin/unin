@@ -514,4 +514,7 @@ h1 {
 	.ci-bl {
 	    width: 100%;
 	}
+	.ci-bl:nth-child(odd) {
+		border-right: 0;
+	}
 }
