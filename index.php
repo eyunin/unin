@@ -231,20 +231,54 @@
 						<p><img src="/assets/img/contacts/location.svg" alt="Address">Адрес:</p>
 						<p>ул. Независимой Украины 90А, Запорожье, Украина</p>
 					</div>
+					<?php /*
 					<div class="ci-bl mail">
-					<!--
 						<p><img src="/assets/img/contacts/mail.svg" alt="Email">Email:</p>
 						<p><a href="mailto:master@master.zp.ua">master@master.zp.ua</a></p>
-					-->
-					</div>
-					<div class="ci-bl w-100 social">
-						<a href="viber://add?number=380999365913" title="Viber"><img src="/assets/img/viber-logo.png" height="60" width="auto" alt="Viber"></a>
-						<a href="https://api.whatsapp.com/send?phone=380999365913" title="WhatsApp">
-							<img src="/assets/img/whatsapp-logo.svg" height="60" width="auto" alt="WhatsApp">
-						</a>
+					</div> */ ?>
+					<div class="ci-bl social">
+						<p>
+							<a href="viber://add?number=380999365913" title="Viber"><img src="/assets/img/viber-logo.png" height="60" width="auto" alt="Viber"></a>
+							<a href="https://api.whatsapp.com/send?phone=380999365913" title="WhatsApp">
+								<img src="/assets/img/whatsapp-logo.svg" height="60" width="auto" alt="WhatsApp">
+							</a>
+						</p>
 						<p>Также вы можете связаться с нами в Viber и WhatsApp</p>
 					</div>
+					<div class="ci-bl w-100">
+						<table class="work-hours">
+							<thead>
+								<tr>
+									<th colspan="2" class="C">Время работы:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="Mon"><td class="L">понедельник</td><td class="R">9:00–18:00</td></tr>
+								<tr id="Tue"><td class="L">вторник</td><td class="R">9:00–18:00</td></tr>
+								<tr id="Wed"><td class="L">среда</td><td class="R">9:00–18:00</td></tr>
+								<tr id="Thu"><td class="L">четверг</td><td class="R">9:00–18:00</td></tr>
+								<tr id="Fri"><td class="L">пятница</td><td class="R">9:00–18:00</td></tr>
+								<tr id="Sat"><td class="L">суббота</td><td class="R">10:00–15:00</td></tr>
+								<tr id="Sun"><td class="L">воскресенье</td><td class="R">Закрыто</td></tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
+			</div>
+			<div class="form">
+				<form method="POST" id="contactForm" autocomplete="off">
+					<p class="form-title">Форма обратного звонка</p>
+					<p class="form-message"></p>
+					<fieldset class="form-gr">
+						<label for="userName">Введите свое имя:</label>
+						<input id="userName" type="text" placeholder="Ваше Имя" name="username">
+					</fieldset>
+					<fieldset class="form-gr">
+						<label for="userPhone">Введите ваш номер телефона:</label>
+						<input id="userPhone" type="tel" placeholder="Пример: +380 11 111 11 11" name="userphone" value="+38">
+					</fieldset>
+					<input type="submit" value="Отправить">
+				</form>
 			</div>
 			<div id="map"></div>
 		</div>
@@ -278,6 +312,7 @@ function initMap() {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgq5Pdi-skyqnnG-RNW4RuwM0sdep7hB4&callback=initMap" async defer></script>
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/slick.min.js"></script>
+<script src="/assets/js/form.js"></script>
 <script>
 	// slider
 	$(document).ready(function(){
@@ -311,6 +346,14 @@ function initMap() {
 			$("body,html").animate({scrollTop: top}, 700);
 			$("#hmt").prop( "checked", false );
 		});
+	});
+	
+	// working hours current day
+	var date = new Date();
+	var dateDay = date.toLocaleString('en', {weekday: 'short'});
+	var curDate = document.getElementById(dateDay);
+	$(document).ready(function(){
+		$(curDate).toggleClass('active');
 	});
 
 </script>

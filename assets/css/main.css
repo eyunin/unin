@@ -314,6 +314,7 @@ h1 {
 	width: 100%;
 	border-right: 0;
 	text-align: center;
+	padding: 15px 0;
 }
 .ci-bl.w-100 a {
 	padding: 7px;
@@ -325,6 +326,25 @@ h1 {
 .ci-bl a {
 	color: #fff;
 	text-decoration: none;
+}
+.work-hours tbody tr {
+	border-top: 1px solid rgba(255,255,255,.6);
+}
+.work-hours tbody tr:last-child {
+	border-bottom: 1px solid rgba(255,255,255,.6);
+}
+.work-hours td, .work-hours th {
+	padding: 7px 5px;
+	font-size: 18px;
+}
+.work-hours td:first-child {
+	text-transform: capitalize;
+	padding-right: 25px;
+}
+.work-hours .active {
+	color: #262d39;
+	font-weight: 500;
+	background: rgba(255,255,255,.6);
 }
 /*mob menu*/
 .hidden-menu-ticker, .sml-logo {
