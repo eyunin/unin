@@ -219,17 +219,17 @@
 				<h1>Контактная информация</h1>
 				<div class="c-info">
 					<div class="ci-bl bt master">
-						<p><img src="/assets/img/contacts/master.svg" alt="Master">Мастер:</p>
+						<p class="flex-cont ai-c"><img src="/assets/img/contacts/master.svg" alt="Master">Мастер:</p>
 						<p>Александр Юнин</p>
 					</div>
 					<div class="ci-bl bt tel">
-						<p><img src="/assets/img/contacts/tel.svg" alt="Phone">Телефоны:</p>
+						<p class="flex-cont ai-c"><img src="/assets/img/contacts/tel.svg" alt="Phone">Телефоны:</p>
 						<p><nobr><a href="tel:+380999365911">+380 99 936 59 13</a></nobr></p>
 						<p><nobr><a href="tel:+380972758406">+380 97 275 84 06</a></nobr></p>
 					</div>
 					<div class="ci-bl location">
-						<p><img src="/assets/img/contacts/location.svg" alt="Address">Адрес:</p>
-						<p>ул. Независимой Украины 90А, Запорожье, Украина</p>
+						<p class="flex-cont ai-c"><img src="/assets/img/contacts/location.svg" alt="Address">Адрес:</p>
+						<p>ул. Независимой Украины 90А<br>Запорожье, Украина</p>
 					</div>
 					<?php /*
 					<div class="ci-bl mail">
@@ -237,13 +237,18 @@
 						<p><a href="mailto:master@master.zp.ua">master@master.zp.ua</a></p>
 					</div> */ ?>
 					<div class="ci-bl social">
+						<p class="flex-cont ai-c"><img src="/assets/img/contacts/social.svg" alt="Messengers">Мессенджеры:</p>
 						<p>
-							<a href="viber://add?number=380999365913" title="Viber"><img src="/assets/img/viber-logo.png" height="60" width="auto" alt="Viber"></a>
-							<a href="https://api.whatsapp.com/send?phone=380999365913" title="WhatsApp">
-								<img src="/assets/img/whatsapp-logo.svg" height="60" width="auto" alt="WhatsApp">
+							<a class="inflex-cont ai-c v" href="viber://add?number=380999365913" title="Viber">
+								<img src="/assets/img/viber.svg" height="60" alt="Viber"> Написать в Viber
+							</a>
+							<a class="inflex-cont ai-c w" href="https://api.whatsapp.com/send?phone=380999365913" title="WhatsApp">
+								<img src="/assets/img/whatsapp.svg" height="60" alt="WhatsApp"> Написать в WhatsApp
+							</a>
+							<a class="inflex-cont ai-c t" href="https://t.me/masterZP" title="Telegram">
+								<img src="/assets/img/telegram.svg" height="60" alt="Telegram"> Написать в Telegram
 							</a>
 						</p>
-						<p>Также вы можете связаться с нами в Viber и WhatsApp</p>
 					</div>
 					<div class="ci-bl w-100">
 						<table class="work-hours">
@@ -271,11 +276,11 @@
 					<p class="form-message"></p>
 					<fieldset class="form-gr">
 						<label for="userName">Введите свое имя:</label>
-						<input id="userName" type="text" placeholder="Ваше Имя" name="username">
+						<input id="userName" type="text" placeholder="Ваше Имя" name="username" pattern="(?=.*[А-Я,а-я]).{2,15}">
 					</fieldset>
 					<fieldset class="form-gr">
 						<label for="userPhone">Введите ваш номер телефона:</label>
-						<input id="userPhone" type="tel" placeholder="Пример: +380 11 111 11 11" name="userphone" value="+38">
+						<input id="userPhone" type="tel"  name="userphone">
 					</fieldset>
 					<input type="submit" value="Отправить">
 				</form>
@@ -311,6 +316,7 @@ function initMap() {
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgq5Pdi-skyqnnG-RNW4RuwM0sdep7hB4&callback=initMap" async defer></script>
 <script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.maskedinput.min.js"></script>
 <script src="/assets/js/slick.min.js"></script>
 <script src="/assets/js/form.js"></script>
 <script>
@@ -356,6 +362,10 @@ function initMap() {
 		$(curDate).toggleClass('active');
 	});
 
+	// mask for phone input in form
+	jQuery(function($){
+		$('#userPhone').mask('+380(99) 999-99-99');
+	});
 </script>
 </body>
 </html>

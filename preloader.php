@@ -1,6 +1,6 @@
 <style>
 .preloader {
-	background: #262d39;
+	background: #243B55;
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -163,7 +163,7 @@
 	function hidePreloader() {
 		setTimeout(function () {
 			preloadFadeOut(preloader);
-		}, 1500);
+		}, 800);
 	}
 	if (window.attachEvent) {
 		window.attachEvent('onload', hidePreloader);

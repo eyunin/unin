@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 691.67 691.67"><defs><style>.cls-1{fill:#4c7aae;}.cls-2{fill:#fff;}</style></defs><title>tel</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_3" data-name="Capa 3"><circle class="cls-1" cx="345.83" cy="345.83" r="345.83"/><path class="cls-2" d="M413,142.83H278.67a50.94,50.94,0,0,0-50.89,50.89V497.95a50.94,50.94,0,0,0,50.89,50.89H413a50.94,50.94,0,0,0,50.89-50.89V193.72A50.94,50.94,0,0,0,413,142.83Zm-134.32,22H413a28.92,28.92,0,0,1,28.89,28.89v16.76H249.79V193.72A28.92,28.92,0,0,1,278.67,164.83Zm163.2,294.36H249.79V232.48H441.88ZM413,526.83H278.67a28.92,28.92,0,0,1-28.89-28.89V481.19H441.88v16.76A28.92,28.92,0,0,1,413,526.83Z"/><path class="cls-2" d="M364.49,494H327.18a11,11,0,1,0,0,22h37.31a11,11,0,0,0,0-22Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 691.7 691.7" style="enable-background:new 0 0 691.7 691.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2565AF;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<title>tel</title>
+<g id="Слой_2">
+	<g id="Capa_3">
+		<circle class="st0" cx="345.8" cy="345.8" r="345.8"/>
+		<path class="st1" d="M413,142.8H278.7c-28.1,0-50.9,22.8-50.9,50.9V498c0,28.1,22.8,50.9,50.9,50.9H413
+			c28.1,0,50.9-22.8,50.9-50.9V193.7C463.9,165.6,441.1,142.9,413,142.8z M278.7,164.8H413c15.9,0,28.9,12.9,28.9,28.9v16.8H249.8
+			v-16.8C249.8,177.8,262.7,164.9,278.7,164.8L278.7,164.8z M441.9,459.2H249.8V232.5h192.1V459.2z M413,526.8H278.7
+			c-15.9,0-28.9-12.9-28.9-28.9v-16.8h192.1V498C441.9,513.9,428.9,526.8,413,526.8z"/>
+		<path class="st1" d="M364.5,494h-37.3c-6.1,0-11,4.9-11,11s4.9,11,11,11h37.3c6.1,0,11-4.9,11-11S370.6,494,364.5,494z"/>
+	</g>
+</g>
+</svg>
